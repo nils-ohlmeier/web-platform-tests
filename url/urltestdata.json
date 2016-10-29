@@ -1,5 +1,5 @@
 [
-  "# Based on http://trac.webkit.org/browser/trunk/LayoutTests/fast/url/script-tests/segments.js",
+  "# REMOVE THIS Based on http://trac.webkit.org/browser/trunk/LayoutTests/fast/url/script-tests/segments.js",
   {
     "input": "http://example\t.\norg",
     "base": "http://example.org/foo/bar",
