@@ -12,7 +12,6 @@ self.onmessage = ev => {
     }
 
     case "error not expected": {
-      console.log("got here");
       self.addEventListener("error", ev => {
         throw new Error("Error event must not be fired");
       });
