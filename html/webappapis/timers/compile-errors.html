@@ -37,7 +37,7 @@ async_test(t => {
       oldSetTimeout("1 *-* 'syntax error'", 0);
 
       // The test passes if no error events have been fired within this time.
-      setTimeout(t.step_func_done(), 10);
+      t.step_timeout(t.step_func_done(), 2000);
     }));
     windowProxy.location.href = "compile-errors-support-2.html";
   });

@@ -18,5 +18,5 @@ self.onmessage = ev => {
     }
   }
 
-  setTimeout(() => { throw new Error("boo"); }, 100);
+  step_timeout(() => { throw new Error("boo"); }, 100);
 };

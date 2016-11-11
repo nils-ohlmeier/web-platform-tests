@@ -57,7 +57,7 @@ async_test(t => {
       assert_equals(onclick, null, "Attempting to compile a syntax error must give null");
 
       // The test passes if no error events have been fired within this time.
-      setTimeout(t.step_func_done(), 10);
+      t.step_timeout(t.step_func_done(), 2000);
     }));
     windowProxy.location.href = "event-handler-idl-attribute-realm-support-2.html";
   });

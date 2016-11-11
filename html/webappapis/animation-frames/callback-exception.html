@@ -45,7 +45,7 @@ async_test(t => {
       });
 
       // The test passes if no error events have been fired within this time.
-      setTimeout(t.step_func_done(), 10);
+      t.step_timeout(t.step_func_done(), 2000);
     }));
     windowProxy.location.href = "callback-exception-support-2.html";
   });
